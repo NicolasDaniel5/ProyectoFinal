@@ -3,27 +3,31 @@
 
     &_body {
         @include flex(column,center,center,15px);
-        width: 33%;
+        width: 30%;
         height: 500px;
         border: 2px solid $secondColor;
         border-radius: 15px;
 
-        h2 {
-            font-size: 35px;
-            font-family: $letraTitulo;
-            color: $secondColor;
-            background-color: $primaryColor;
+        
+        @for $i from 2 through 4 {
+            h#{$i} {
+                font-size: 35px;
+                font-family: $letraTitulo;
+                color: $secondColor;
+                background-color: $primaryColor;
+            }
         }
 
         p {
+            
             font-size: 25px;
             font-family: $letraParrafo;;
             color: $textColor;
         }
 
         &:hover {
-            width: 40%;
-            height: 550px;
+            width: 33%;
+            height: 525px;
         }
     }
     

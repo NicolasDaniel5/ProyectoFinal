@@ -194,12 +194,24 @@ label {
   justify-content: center;
   align-items: center;
   gap: 15px;
-  width: 33%;
+  width: 30%;
   height: 500px;
   border: 2px solid #8ce5a2;
   border-radius: 15px;
 }
 .cards_body h2 {
+  font-size: 35px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #8ce5a2;
+  background-color: #070923;
+}
+.cards_body h3 {
+  font-size: 35px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #8ce5a2;
+  background-color: #070923;
+}
+.cards_body h4 {
   font-size: 35px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   color: #8ce5a2;
@@ -211,8 +223,8 @@ label {
   color: white;
 }
 .cards_body:hover {
-  width: 40%;
-  height: 550px;
+  width: 33%;
+  height: 525px;
 }
 
 .hero_padre {
@@ -270,9 +282,26 @@ label {
   font-family: "Roboto", sans-serif;
   align-self: center;
 }
-.hero3 h1 {
+.hero3 h2 {
   font-size: 40px;
-  margin: 10px;
+  color: #8ce5a2;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  align-self: center;
+}
+.hero3 h3 {
+  font-size: 40px;
+  color: #8ce5a2;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  align-self: center;
+}
+.hero3 h4 {
+  font-size: 40px;
+  color: #8ce5a2;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  align-self: center;
+}
+.hero3 h5 {
+  font-size: 40px;
   color: #8ce5a2;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   align-self: center;

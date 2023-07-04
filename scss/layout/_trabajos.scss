@@ -54,14 +54,15 @@
     
         
     }
-
-    h1 {
-        font-size: 40px;
-        margin: 10px;
-        color: $secondColor;
-        font-family: $letraTitulo;
-        align-self: center;
+    @for $i from 2 through 5 {
+        h#{$i}{
+            font-size: 40px;
+            color: $secondColor;
+            font-family: $letraTitulo;
+            align-self: center;
+        }
     }
+    
       
     &_boton {
         @include flex(row,center,none,10px);
@@ -82,4 +83,6 @@
             }
         }
     }
+    
 }
+
