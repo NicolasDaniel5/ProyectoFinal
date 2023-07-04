@@ -11,3 +11,7 @@
     height: $height;
     object-fit: $object;
 }
+
+@keyframes mymove {
+    50% {color: $secondColor;}
+  }
