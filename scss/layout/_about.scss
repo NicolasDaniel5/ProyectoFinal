@@ -1,0 +1,27 @@
+.hero2{
+
+    @include flex(row,center,center,15px);
+    width: 100%;
+    img {
+        @include image(100%,400px,cover);
+        border-radius: 15px;
+        border: 2px solid $secondColor;
+    
+    }
+
+    &_content {
+        width: 50%;
+        color: $textColor;
+        font-family: $letraParrafo;
+        @include flex(column,center,center,0);
+        a {
+            text-decoration: none;
+            @include flex(column,center,center,0);
+            color: $secondColor;
+            width: 120%;
+            border: 1px solid $secondColor;
+            border-radius: 10px;
+        }
+    }
+
+}

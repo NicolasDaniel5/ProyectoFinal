@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <!-- link bootstrap icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Contacto</title>
+</head>
+<body class="background">
+
+    <header>
+        <nav class="navbar navbar-dark bg-dark fixed-top navbar-expand-md">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="../index.html"><i class="bi bi-bug-fill"></i></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel"><i class="bi bi-bug-fill"></i></h5>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-5">
+                    <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="servicios.html">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="trabajos.html">Trabajos</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="contacto.html">Contacto</a>
+                      </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <main class="espacio">
+        <div class="titulo">
+            <h1>
+                Contacto
+            </h1>
+        </div>
+        <form class="row g-3 py-5 justify-content-center container-fluid">
+          <div class="col-md-4 mb-3">
+            <label for="validationDefault01" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="validationDefault01" value="" placeholder="Ingrese su nombre" required>
+          </div>
+          <div class="col-md-4 mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Email</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+          </div>
+          <div class="col-md-8 mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Idea del proyecto</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+          <div class="col-md-8">
+            <button class="btn btn-primary" type="submit">Submit form</button>
+          </div>
+        </form>
+
+        <div class="hero4 ">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31195.812627005962!2d-58.38171691918646!3d-34.72898591716057!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a32d5de61a58d3%3A0x1aad9afcad7e4b08!2sB1825%20Monte%20Chingolo%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1685723242307!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <p>© copyright 2023-Nicolas Daniel Ferreyra</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</body>
+</html>

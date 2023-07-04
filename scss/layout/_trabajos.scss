@@ -1,0 +1,85 @@
+.hero_padre {
+    width: 100%;
+    height: 750px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4,1fr);
+    grid-template-areas: 
+    'area1 area1 area2 area2'
+    'area1 area1 area2 area2'
+    'area3 area3 area4 area4'
+    'area3 area3 area4 area4'
+    ;
+    gap: 15px;
+    align-items: center;
+}
+.g1 {
+    grid-area: area1;
+}
+
+.g2 {
+    grid-area: area2;
+}
+
+.g3 {
+    grid-area: area3;
+}
+
+.g4 {
+    grid-area: area4;
+}
+
+
+
+.hero3 {
+    @include flex(row,space-between,center,0);
+    border: 3px solid $secondColor ;
+    border-radius: 10px;
+
+    img {
+        @include image(40%,300px,cover);
+        border-radius: 10px;
+    
+    }
+    &_content {
+        @include flex(column,none,none,30px);
+  
+    }
+
+    p{
+        width: 100%;
+        color: #F9F5EB;
+        font-family: $letraParrafo;
+        align-self: center;
+    
+        
+    }
+
+    h1 {
+        font-size: 40px;
+        margin: 10px;
+        color: $secondColor;
+        font-family: $letraTitulo;
+        align-self: center;
+    }
+      
+    &_boton {
+        @include flex(row,center,none,10px);
+
+        a {
+            text-decoration: none;
+            @include flex(row,center,none,0);
+            color: $secondColor;
+            width: 20%;
+            background-color: $primaryColor;
+            border: 1px solid $secondColor;
+            border-radius: 10px;
+
+            &:hover {
+                color: $primaryColor;
+                background-color: $secondColor;
+                border: 2px solid $primaryColor;
+            }
+        }
+    }
+}

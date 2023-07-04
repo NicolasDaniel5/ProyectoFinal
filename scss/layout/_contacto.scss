@@ -1,0 +1,29 @@
+label {
+    color: $secondColor; 
+}
+
+.hero4 {
+    @include flex(row,center,center,0);
+
+    iframe{
+        border-radius: 5px;
+        width: 65%;
+    
+    }
+}
+
+
+.btn {
+    color: $secondColor;
+    background-color: $primaryColor;
+    border: 2px solid $secondColor;
+
+    &:hover {
+        color: $primaryColor;
+        background-color: $secondColor;
+        border: 2px solid $primaryColor;
+    }
+}
+.form-control {
+    border: 2px solid $secondColor;
+}
