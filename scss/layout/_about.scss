@@ -12,7 +12,10 @@
     &_content {
         width: 50%;
         color: $textColor;
-        font-family: $letraParrafo;
+        p {
+            font-family: $letraParrafo;
+        }
+        
         @include flex(column,center,center,0);
         a {
             text-decoration: none;

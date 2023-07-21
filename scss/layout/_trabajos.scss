@@ -32,18 +32,21 @@
 
 
 .hero3 {
-
+    background-color: rgba(68, 68, 68, 0.993);
     @include flex(row,start,center,100px);
+    width: 100%;
     border: 3px solid $secondColor ;
     border-radius: 10px;
 
     img {
         @include image(40%,300px,cover);
-        border-radius: 10px;
+        border-radius: 6px;
     
     }
     &_content {
-        @include flex(column,none,none,30px);
+        @include flex(column,none,none,20px);
+        overflow: hidden;
+ 
   
     }
 

@@ -7,7 +7,7 @@
         height: 500px;
         border: 2px solid $secondColor;
         border-radius: 15px;
-
+        transition: all 1s;
         
         @for $i from 2 through 4 {
             h#{$i} {
@@ -15,6 +15,7 @@
                 font-family: $letraTitulo;
                 color: $secondColor;
                 background-color: $primaryColor;
+                padding: 0px 10px;
             }
         }
 
@@ -23,11 +24,14 @@
             font-size: 25px;
             font-family: $letraParrafo;;
             color: $textColor;
+            padding: 25px;
+           
         }
 
         &:hover {
             width: 33%;
             height: 525px;
+            
         }
     }
     

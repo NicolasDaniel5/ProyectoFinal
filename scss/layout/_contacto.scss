@@ -1,5 +1,10 @@
 label {
-    color: $secondColor; 
+    color: $secondColor;
+    font-family: $letraParrafo;
+}
+
+input, textarea {
+    font-family: $letraParrafo;
 }
 
 .hero4 {
@@ -7,7 +12,8 @@ label {
 
     iframe{
         border-radius: 5px;
-        width: 65%;
+        width: 800px;
+        height: 600px;
     
     }
 }
@@ -26,4 +32,25 @@ label {
 }
 .form-control {
     border: 2px solid $secondColor;
+}
+
+
+@media only screen and (max-width:1024px){
+    .hero4 {
+        iframe{
+            width: 500px;
+            height: 400px;
+        }
+    }   
+}
+
+@media only screen and (max-width:768px){
+    .hero4 {
+        iframe{
+            width: 300px;
+            height: 300px;
+        }
+    } 
+    
+    
 }
