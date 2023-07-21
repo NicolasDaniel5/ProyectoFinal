@@ -370,9 +370,8 @@ input, textarea {
   justify-content: none;
   align-items: none;
   gap: 20px;
-  overflow: hidden;
 }
-.hero3 p {
+.hero3_content p {
   width: 100%;
   color: #F9F5EB;
   font-family: "Shadows Into Light", cursive;
@@ -435,6 +434,25 @@ input, textarea {
   }
 }
 @media only screen and (max-width: 768px) {
+  .hero3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+  }
+  .hero3_content {
+    justify-content: start;
+  }
+}
+@media only screen and (max-width: 335px) {
+  .hero3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 0px;
+  }
   .hero3_content {
     justify-content: start;
   }

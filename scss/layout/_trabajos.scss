@@ -45,19 +45,20 @@
     }
     &_content {
         @include flex(column,none,none,20px);
-        overflow: hidden;
+        
+        p{
+            width: 100%;
+            color: #F9F5EB;
+            font-family: $letraParrafo;
+            align-self: center;
+        
+            
+        }
  
   
     }
 
-    p{
-        width: 100%;
-        color: #F9F5EB;
-        font-family: $letraParrafo;
-        align-self: center;
     
-        
-    }
     @for $i from 2 through 5 {
         h#{$i}{
             font-size: 40px;
@@ -101,8 +102,18 @@
     }
   }
 
-  @media only screen and (max-width: 768px){
+@media only screen and (max-width: 768px){
     .hero3{
+        @include flex(row,start,center,20px);
+        &_content {
+            justify-content: start;
+        }
+    }
+  }
+
+@media only screen and (max-width: 335px){
+    .hero3{
+        @include flex(row,start,center,0px);
         &_content {
             justify-content: start;
         }
